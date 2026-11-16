@@ -8,7 +8,9 @@ Spend: $0.00 of the $5 budget (see `SPEND.md`). No paid API calls were made.
 
 Plain static site, no framework, no build step: `index.html`, `styles.css`, `site.js`, `404.html`, `favicon.svg`, `sitemap.xml`, `robots.txt`, plus `.nojekyll`. Styling uses the omid-tools-kit tokens (colour, type scale, layout width, footer) copied into `styles.css`, so the site matches the tools; `site.js` mirrors the kit's theme script and uses the same localStorage key (`omid-tools-theme`), so a visitor's light/dark choice carries between the site and the tools. No analytics, trackers, cookies or third-party embeds; system fonts only; the page loads no external resources at all.
 
-Sections are in the brief's order — header, hero, Tools (three groups of three), Research, About (85 words), Elsewhere, kit footer with "© 2026 Omid Golchin" and a link to the site's repo. All wording is the brief's, verbatim where the brief gives wording (hero lines, research interests, the in-progress line). The working paper is not mentioned anywhere. No email address is shown (open-question default), and there is no CV download (default). The Google Sites site is not linked (default).
+Sections are in the brief's order — header, hero, Tools (three groups of three), Research, About (85 words), Elsewhere, kit footer with "© 2026 Omid Golchin" and a link to the site's repo. All wording is the brief's, verbatim where the brief gives wording (hero lines, research interests, the in-progress line). No email address is shown (open-question default), and there is no CV download (default). The Google Sites site is not linked (default).
+
+**Update, 2026-11-16 (after the first push):** the brief originally kept Omid's working paper off the site entirely. Omid overrode that for the site and asked for a brief mention, so the Research section now also carries, in the same form his CVs use: "When Authority Replaces Verification: Error Propagation in Agentic Decision Systems." In preparation; target journal: Decision Sciences. Nothing about the paper's design or results is stated.
 
 ## Screenshots
 
@@ -91,7 +93,7 @@ Checked against all nine live tools (2026-11-16): every tool runs entirely in th
 
 ## Placeholders and deviations for Claude
 
-1. **Elsewhere placeholders:** Kaggle, Tableau Public and Maven Analytics link to `#` — their exact profile URLs were not in the brief or in anything Ember can verify. LinkedIn (https://www.linkedin.com/in/omidgolchin) and GitHub (https://github.com/omidgolchin) are real, verified URLs. Supply the three missing URLs and the links can be filled in one edit.
+1. **Elsewhere placeholders — resolved by Omid, 2026-11-16:** at build time Kaggle, Tableau Public and Maven Analytics linked to `#` because their exact profile URLs were not in the brief or in anything Ember could verify. Omid filled them himself in commit 28f47f ("Fill profile links, update research interests"): Kaggle https://www.kaggle.com/omidgolchin, Tableau Public https://public.tableau.com/app/profile/omid.golchin/vizzes, Maven Analytics https://mavenshowcase.com/profile/186113b0-f031-70c6-1ac7-bbf1acaf34e4. In the same commit he replaced the Research interests wording with his own updated version; the working-paper line was then added on top of his text, leaving his wording untouched.
 2. **Profile README:** the brief asks for the LinkedIn URL as a placeholder; the draft uses the real, verified URL instead (it is the address in Omid's settled signature). Everything else follows part 5 of the brief; the 2024 content (emoji list, learning goals, the old email line, the template comment) is removed. Draft only — not pushed.
 3. **Sample Size Planner is not on the site.** It was built on 2026-11-16 and is not among the brief's nine tools; it can be added as a tenth card when Omid says.
 4. Screenshots for this report live in `report-assets/` (JPEG, ~1.1 MB total) so the report renders on GitHub; the brief's repo layout did not list a folder for them.
