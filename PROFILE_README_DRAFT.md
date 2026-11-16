@@ -22,4 +22,4 @@ Site: https://omidgolchin.github.io/
 - [Production Line Bottleneck Finder](https://omidgolchin.github.io/production-line-simulator/)
 - [Ordering Policy Tester](https://omidgolchin.github.io/ordering-policy-tester/)
 
-Contact: [LinkedIn](https://www.linkedin.com/in/omidgolchin)
+Contact: [LinkedIn](https://www.linkedin.com/in/omidgolchin/)
