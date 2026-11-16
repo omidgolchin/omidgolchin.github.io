@@ -179,3 +179,6 @@ section p { max-width: 72ch; }
   margin-top: var(--sp-6); padding: var(--sp-4) 0 var(--sp-5);
 }
 .kit-footer p { margin: 0 0 var(--sp-2); }
+
+.studies { max-width: 72ch; padding-left: 1.2em; }
+.studies li { margin: 0 0 var(--sp-2); }

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Omid Golchin — Decision tools and LLM evaluation</title>
-<meta name="description" content="Omid Golchin builds tools that make classic decision and simulation methods easy to use, and studies how far LLM and agent outputs can be trusted. Nine tools, all running in your browser.">
+<meta name="description" content="Omid Golchin builds tools that make classic decision and simulation methods easy to use, and studies how far LLM and agent outputs can be trusted. Eight tools, all running in your browser, and small studies with frozen plans.">
 <link rel="canonical" href="https://omidgolchin.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Omid Golchin — Decision tools and LLM evaluation">
@@ -53,19 +53,11 @@
     <h3 class="group-h">Evaluating LLMs and agents</h3>
     <div class="cards">
       <article class="card">
-        <img src="assets/tools/llm-eval-error-bars.webp" alt="Screenshot of Error Bars for LLM Evals: the verdict, 50.4% ± 7.3 points, with its error-bar strip and checks" width="600" height="399" loading="lazy">
-        <div class="card-body">
-          <h4>Error Bars for LLM Evals</h4>
-          <p>Paste your eval results and get an error bar you can trust, plus where your next runs should go.</p>
-          <p class="card-actions"><a class="btn btn-primary" href="https://omidgolchin.github.io/llm-eval-error-bars/">Use it</a> <a href="https://github.com/omidgolchin/llm-eval-error-bars">Code</a></p>
-        </div>
-      </article>
-      <article class="card">
         <img src="assets/tools/experiment-hazard-simulator.webp" alt="Screenshot of the Agent Eval Planner: an eval design and its verdict, too few tasks: use about 109" width="600" height="399" loading="lazy">
         <div class="card-body">
           <h4>Agent Eval Planner</h4>
           <p>Plan an agent eval before you run it: its chance of detecting an improvement, and of showing a fake one.</p>
-          <p class="card-actions"><a class="btn btn-primary" href="https://omidgolchin.github.io/experiment-hazard-simulator/">Use it</a> <a href="https://github.com/omidgolchin/experiment-hazard-simulator">Code</a></p>
+          <p class="card-actions"><a class="btn btn-primary" href="https://omidgolchin.github.io/experiment-hazard-simulator/">Use it</a> <a href="https://github.com/omidgolchin/experiment-hazard-simulator">Code</a> <a href="https://github.com/omidgolchin/agent-eval-hazards-study">Study</a></p>
         </div>
       </article>
       <article class="card">
@@ -113,7 +105,7 @@
         <div class="card-body">
           <h4>Call Center Staffing Planner</h4>
           <p>Enter calls per hour and call length; get how many agents to schedule to hit your service target.</p>
-          <p class="card-actions"><a class="btn btn-primary" href="https://omidgolchin.github.io/queue-simulator/">Use it</a> <a href="https://github.com/omidgolchin/queue-simulator">Code</a></p>
+          <p class="card-actions"><a class="btn btn-primary" href="https://omidgolchin.github.io/queue-simulator/">Use it</a> <a href="https://github.com/omidgolchin/queue-simulator">Code</a> <a href="https://github.com/omidgolchin/call-center-queueing-study">Study</a></p>
         </div>
       </article>
       <article class="card">
@@ -140,6 +132,13 @@
     <p><strong>Interests:</strong> LLM agents and their evaluation; AI for engineering, operations and decisions, including forecasting, simulation and uncertainty quantification; adapting language models to specialised technical domains, including with synthetic data.</p>
     <p><strong>Working paper:</strong> “When Authority Replaces Verification: Error Propagation in Agentic Decision Systems.” In preparation; target journal: Decision Sciences.</p>
     <p><strong>In progress:</strong> Do Language Models Overshoot When a Correction Gives a Direction but No Target? Study designed; preregistration and pilot, November 2026.</p>
+    <h3 class="group-h">Studies</h3>
+    <p class="tools-note">Small independent studies, each with its plan frozen before the main run; not peer-reviewed.</p>
+    <ul class="studies">
+      <li><strong><a href="https://omidgolchin.github.io/llm-eval-error-bars/">Error Bars for LLM Evals</a></strong>: on 6,000 real GSM8K runs from three models, the usual pooled 95% interval for an eval score contained the true accuracy only 69–80% of the time; intervals clustered by question held near 95%. <a href="https://github.com/omidgolchin/llm-eval-error-bars">Code and data</a></li>
+      <li><strong><a href="https://github.com/omidgolchin/agent-eval-hazards-study">How design hazards fake wins in LLM-agent experiments</a></strong>: a simulation of eight common design mistakes; giving one arm best-of-3 attempts produced a "significant" improvement in 91% of evals with no real effect. Tool built from it: <a href="https://omidgolchin.github.io/experiment-hazard-simulator/">Agent Eval Planner</a>.</li>
+      <li><strong><a href="https://github.com/omidgolchin/call-center-queueing-study">Where the call-center formula breaks, and can an LLM do queueing math?</a></strong>: variable call lengths doubled the wait the standard formula predicts; asked directly, each of three open models was close on 9 of 15 scenarios. Tool built from it: <a href="https://omidgolchin.github.io/queue-simulator/">Call Center Staffing Planner</a>.</li>
+    </ul>
   </section>
 
   <section id="about" aria-labelledby="about-h">
