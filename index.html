@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Omid Golchin — Decision tools and LLM evaluation</title>
+<meta name="description" content="Omid Golchin builds tools that make classic decision and simulation methods easy to use, and studies how far LLM and agent outputs can be trusted. Nine tools, all running in your browser.">
+<link rel="canonical" href="https://omidgolchin.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Omid Golchin — Decision tools and LLM evaluation">
+<meta property="og:description" content="Tools that make classic decision and simulation methods easy to use, and research on how far LLM and agent outputs can be trusted.">
+<meta property="og:url" content="https://omidgolchin.github.io/">
+<meta property="og:image" content="https://omidgolchin.github.io/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script src="site.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#tools">Skip to the tools</a>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <p class="site-name">Omid Golchin</p>
+    <nav aria-label="Site">
+      <a href="#tools">Tools</a>
+      <a href="#research">Research</a>
+      <a href="#about">About</a>
+      <a href="https://www.linkedin.com/in/omidgolchin">LinkedIn</a>
+      <a href="https://github.com/omidgolchin">GitHub</a>
+      <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">◐ Theme</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero">
+    <h1>I build tools that make classic decision and simulation methods easy to use, and I study how far LLM and agent outputs can be trusted: how repeatable, how well calibrated, how reliable.</h1>
+    <p class="hero-sub">Mechanical engineer and MBA, applying for PhD research in AI for engineering, operations and decisions.</p>
+    <p class="hero-actions">
+      <a class="btn btn-primary" href="#tools">See the tools</a>
+      <a class="btn" href="https://www.linkedin.com/in/omidgolchin">LinkedIn</a>
+    </p>
+  </section>
+
+  <section id="tools" aria-labelledby="tools-h">
+    <h2 id="tools-h">Tools</h2>
+    <p class="tools-note">Each tool runs in your browser. The optional AI fill sends your text only to the language-model provider whose key you enter.</p>
+
+    <h3 class="group-h">Evaluating LLMs and agents</h3>
+    <div class="cards">
+      <article class="card">
+        <img src="assets/tools/llm-eval-error-bars.webp" alt="Screenshot of Error Bars for LLM Evals: pasted eval results with an error bar and its checks" width="600" height="399" loading="lazy">
+        <div class="card-body">
+          <h4>Error Bars for LLM Evals</h4>
+          <p>Paste your eval results and get an error bar you can trust, plus where your next runs should go.</p>
+          <p class="card-actions"><a class="btn btn-primary" href="https://omidgolchin.github.io/llm-eval-error-bars/">Use it</a> <a href="https://github.com/omidgolchin/llm-eval-error-bars">Code</a></p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="assets/tools/experiment-hazard-simulator.webp" alt="Screenshot of the Agent Eval Planner: eval design inputs with a hint under each, and the verdict" width="600" height="399" loading="lazy">
+        <div class="card-body">
+          <h4>Agent Eval Planner</h4>
+          <p>Plan an agent eval before you run it: its chance of detecting an improvement, and of showing a fake one.</p>
+          <p class="card-actions"><a class="btn btn-primary" href="https://omidgolchin.github.io/experiment-hazard-simulator/">Use it</a> <a href="https://github.com/omidgolchin/experiment-hazard-simulator">Code</a></p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="assets/tools/persuasion-checker.webp" alt="Screenshot of Which Draft Persuades?: two drafts in, a verdict on which is more likely to persuade, with checks" width="600" height="399" loading="lazy">
+        <div class="card-body">
+          <h4>Which Draft Persuades?</h4>
+          <p>Paste two drafts and get a calibrated verdict on which is more likely to change the reader's mind, and why.</p>
+          <p class="card-actions"><a class="btn btn-primary" href="https://omidgolchin.github.io/persuasion-checker/">Use it</a> <a href="https://github.com/omidgolchin/persuasion-checker">Code</a></p>
+        </div>
+      </article>
+    </div>
+
+    <h3 class="group-h">Decisions under uncertainty</h3>
+    <div class="cards">
+      <article class="card">
+        <img src="assets/tools/bayesian-ab-lab.webp" alt="Screenshot of the A/B Test Decision Tool: test counts in, a ship, keep testing, or stop verdict with its checks" width="600" height="399" loading="lazy">
+        <div class="card-body">
+          <h4>A/B Test Decision Tool</h4>
+          <p>Enter visitors and conversions for each version and get a verdict you can defend: ship, keep testing, or stop.</p>
+          <p class="card-actions"><a class="btn btn-primary" href="https://omidgolchin.github.io/bayesian-ab-lab/">Use it</a> <a href="https://github.com/omidgolchin/bayesian-ab-lab">Code</a></p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="assets/tools/gpu-budget-planner.webp" alt="Screenshot of the GPU Budget Planner: job inputs and a recommended buying plan with the cost range" width="600" height="399" loading="lazy">
+        <div class="card-body">
+          <h4>GPU Budget Planner</h4>
+          <p>Enter the GPU-hours you need and your deadline; get a buying plan (reserve, on demand, spot, or mix) with risks.</p>
+          <p class="card-actions"><a class="btn btn-primary" href="https://omidgolchin.github.io/gpu-budget-planner/">Use it</a> <a href="https://github.com/omidgolchin/gpu-budget-planner">Code</a></p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="assets/tools/order-quantity-planner.webp" alt="Screenshot of the Order Quantity Planner: a product's sales history and the recommended order with its checks" width="600" height="399" loading="lazy">
+        <div class="card-body">
+          <h4>Order Quantity Planner</h4>
+          <p>Paste a product's past sales and your prices, and get how many units to order, the profit, and stock-out risk.</p>
+          <p class="card-actions"><a class="btn btn-primary" href="https://omidgolchin.github.io/order-quantity-planner/">Use it</a> <a href="https://github.com/omidgolchin/order-quantity-planner">Code</a></p>
+        </div>
+      </article>
+    </div>
+
+    <h3 class="group-h">Operations and simulation</h3>
+    <div class="cards">
+      <article class="card">
+        <img src="assets/tools/queue-simulator.webp" alt="Screenshot of the Call Center Staffing Planner: calls per hour in, the agents to schedule, with checks" width="600" height="399" loading="lazy">
+        <div class="card-body">
+          <h4>Call Center Staffing Planner</h4>
+          <p>Enter calls per hour and call length; get how many agents to schedule to hit your service target.</p>
+          <p class="card-actions"><a class="btn btn-primary" href="https://omidgolchin.github.io/queue-simulator/">Use it</a> <a href="https://github.com/omidgolchin/queue-simulator">Code</a></p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="assets/tools/production-line-simulator.webp" alt="Screenshot of the Production Line Bottleneck Finder: a station table and the bottleneck verdict with its checks" width="600" height="399" loading="lazy">
+        <div class="card-body">
+          <h4>Production Line Bottleneck Finder</h4>
+          <p>Enter your stations' output, variability and buffer space, and get the bottleneck and the output your line can really sustain.</p>
+          <p class="card-actions"><a class="btn btn-primary" href="https://omidgolchin.github.io/production-line-simulator/">Use it</a> <a href="https://github.com/omidgolchin/production-line-simulator">Code</a></p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="assets/tools/ordering-policy-tester.webp" alt="Screenshot of the Ordering Policy Tester: ordering rules compared on cost and bullwhip, with the recommended rule" width="600" height="399" loading="lazy">
+        <div class="card-body">
+          <h4>Ordering Policy Tester</h4>
+          <p>Compare three ordering rules for your supply chain stage, scored on your cost and how hard they whip the chain.</p>
+          <p class="card-actions"><a class="btn btn-primary" href="https://omidgolchin.github.io/ordering-policy-tester/">Use it</a> <a href="https://github.com/omidgolchin/ordering-policy-tester">Code</a></p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="research" aria-labelledby="research-h">
+    <h2 id="research-h">Research</h2>
+    <p><strong>Interests:</strong> LLM agents for engineering and data-analysis work; adapting general-purpose language models to specialised technical domains; AI for engineering, operations and decisions, including simulation and decision-making under uncertainty.</p>
+    <p><strong>In progress:</strong> Do Language Models Overshoot When a Correction Gives a Direction but No Target? Study designed; preregistration and pilot, November 2026.</p>
+  </section>
+
+  <section id="about" aria-labelledby="about-h">
+    <h2 id="about-h">About</h2>
+    <p>BS in Mechanical Engineering from the University of Tehran, and an MBA (Marketing) from Sharif University of Technology. I led AI product work at an AI-product startup studio, working with data-science and engineering teams on bringing language models into business processes. Earlier, I worked in startup investment analysis at a venture firm, in market research, and ran e-commerce businesses. My arc: an engineer and operator who came to data and AI through real business and product problems, then built the technical foundation for graduate research.</p>
+  </section>
+
+  <section id="elsewhere" aria-labelledby="elsewhere-h">
+    <h2 id="elsewhere-h">Elsewhere</h2>
+    <ul class="elsewhere">
+      <li><a href="https://www.linkedin.com/in/omidgolchin">LinkedIn</a></li>
+      <li><a href="https://github.com/omidgolchin">GitHub</a></li>
+      <li><a href="#">Kaggle</a></li>
+      <li><a href="#">Tableau Public</a></li>
+      <li><a href="#">Maven Analytics</a></li>
+    </ul>
+  </section>
+
+  <footer class="kit-footer">
+    <p>Built by Omid Golchin · <a href="https://github.com/omidgolchin/omidgolchin.github.io">Site code</a> · Everything on this page runs in your browser; there are no trackers or cookies.</p>
+    <p>© 2026 Omid Golchin</p>
+  </footer>
+
+</main>
+</body>
+</html>
